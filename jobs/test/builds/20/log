@@ -1,0 +1,16 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /root/.jenkins/workspace/test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dineshmadivada55/Java_Repo.git # timeout=10
+Fetching upstream changes from https://github.com/dineshmadivada55/Java_Repo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dineshmadivada55/Java_Repo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/any^{commit} # timeout=10
+ > git rev-parse any^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE

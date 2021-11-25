@@ -1,0 +1,59 @@
+Started by GitHub push by dineshmadivada55
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/maven
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /root/.jenkins/workspace/maven/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dineshmadivada55/helloworld.git # timeout=10
+Fetching upstream changes from https://github.com/dineshmadivada55/helloworld.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dineshmadivada55/helloworld.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ca85ef50c7ac6ba03a6879d36a3721eee97bb151 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ca85ef50c7ac6ba03a6879d36a3721eee97bb151 # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk d62ee46e3d7c3fd7ec1ef10bf07bbc75513aa983 # timeout=10
+[maven] $ mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.coveros.demo:helloworld >---------------------
+[INFO] Building Hello World 1.3
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ helloworld ---
+[INFO] Deleting /root/.jenkins/workspace/maven/target
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ helloworld ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/maven/src/main/resources
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ helloworld ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/maven/target/classes
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ helloworld ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/maven/src/test/resources
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ helloworld ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ helloworld ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ helloworld ---
+[INFO] Building jar: /root/.jenkins/workspace/maven/target/helloworld-1.3.jar
+[INFO] 
+[8mha:////4AAtahjleNtzWiZvea/jZyg89W5Uec47Xe8bJ+gtUHYUAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ helloworld ---
+[INFO] Installing /root/.jenkins/workspace/maven/target/helloworld-1.3.jar to /root/.m2/repository/com/coveros/demo/helloworld/1.3/helloworld-1.3.jar
+[INFO] Installing /root/.jenkins/workspace/maven/pom.xml to /root/.m2/repository/com/coveros/demo/helloworld/1.3/helloworld-1.3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.623 s
+[INFO] Finished at: 2021-10-27T05:22:28Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>branch</name>
+          <value>dev</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>bool</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.6.2">
+          <name>mycredits</name>
+          <value></value>
+          <isDefaultValue>true</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <hudson.model.PasswordParameterValue>
+          <name>mypsswd</name>
+          <value>{AQAAABAAAAAQkTljtViD5nDFwLtUPK6f3no0Y2fFMqfkMcu/YLbvtsc=}</value>
+        </hudson.model.PasswordParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>branch</string>
+        <string>bool</string>
+        <string>mycredits</string>
+        <string>mypsswd</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+  </actions>
+  <queueId>21</queueId>
+  <timestamp>1635081540547</timestamp>
+  <startTime>1635081540554</startTime>
+  <result>FAILURE</result>
+  <duration>372</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/test</workspace>
+  <hudsonVersion>2.317</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

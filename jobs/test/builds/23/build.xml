@@ -1,0 +1,85 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>branch</name>
+          <value>dev</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>bool</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.6.2">
+          <name>mycredits</name>
+          <value></value>
+          <isDefaultValue>true</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <hudson.model.PasswordParameterValue>
+          <name>mypsswd</name>
+          <value>{AQAAABAAAAAQhK6+0ut6p+iSsi6cgxxvj4Zunh8DL6jzZ0xLFoW+cPk=}</value>
+        </hudson.model.PasswordParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>branch</string>
+        <string>bool</string>
+        <string>mycredits</string>
+        <string>mypsswd</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>6e1df7c15b1e8d74332bdb64d646aa1a6f4c4b68</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>23</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/dineshmadivada55/Java_Repo.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.scm.SCMRevisionState_-None/>
+  </actions>
+  <queueId>23</queueId>
+  <timestamp>1635081653951</timestamp>
+  <startTime>1635081653953</startTime>
+  <result>SUCCESS</result>
+  <duration>14066</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/test</workspace>
+  <hudsonVersion>2.317</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@4.9.0">
+    <authorOrCommitter>false</authorOrCommitter>
+    <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
+  </scm>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

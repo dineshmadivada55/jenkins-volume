@@ -1,0 +1,79 @@
+Started by GitHub push by dineshmadivada55
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/maven
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /root/.jenkins/workspace/maven/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dineshmadivada55/helloworld.git # timeout=10
+Fetching upstream changes from https://github.com/dineshmadivada55/helloworld.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dineshmadivada55/helloworld.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 614a13e22f388df331288b057937f3ef44ad508b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 614a13e22f388df331288b057937f3ef44ad508b # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk f60f0ac63e8f8a515c6520ac465a3e745bfd7688 # timeout=10
+Jenkins Artifactory Plugin version: 3.13.2
+Artifactory integration is enabled
+[maven] $ java -classpath /root/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/mymaven/boot/* -Dmaven.home=/root/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/mymaven -Dmaven.conf=/root/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/mymaven/conf -DbuildInfoConfig.propertiesFile=/root/.jenkins/workspace/maven@tmp/artifactory/buildInfo6586543167054123470.properties -Dm3plugin.lib=/root/.jenkins/workspace/maven/cache/artifactory-plugin/3.13.2 -Dclassworlds.conf=/root/.jenkins/workspace/maven/classworlds6145573518352459687conf -Dmaven.multiModuleProjectDirectory=/root/.jenkins/workspace/maven org.codehaus.plexus.classworlds.launcher.Launcher clean install
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/mymaven/lib/maven-slf4j-provider-3.8.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.jenkins/workspace/maven/cache/artifactory-plugin/3.13.2/slf4j-simple-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.MavenSimpleLoggerFactory]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/mymaven/lib/maven-slf4j-provider-3.8.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.jenkins/workspace/maven/cache/artifactory-plugin/3.13.2/slf4j-simple-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.MavenSimpleLoggerFactory]
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Scanning for projects...
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoRecorder - Initializing Artifactory Build-Info Recording
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --------------------< com.coveros.demo:helloworld >---------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Building Hello World 1.2
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --------------------------------[ jar ]---------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-clean-plugin:2.5:clean (default-clean) @ helloworld ---
+[main] INFO org.apache.maven.plugin.clean.CleanMojo - Deleting /root/.jenkins/workspace/maven/target
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-resources-plugin:2.6:resources (default-resources) @ helloworld ---
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Using 'UTF-8' encoding to copy filtered resources.
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /root/.jenkins/workspace/maven/src/main/resources
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-compiler-plugin:3.8.1:compile (default-compile) @ helloworld ---
+[main] INFO org.apache.maven.plugin.compiler.CompilerMojo - Changes detected - recompiling the module!
+[main] INFO org.codehaus.plexus.compiler.javac.JavacCompiler - Compiling 1 source file to /root/.jenkins/workspace/maven/target/classes
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-resources-plugin:2.6:testResources (default-testResources) @ helloworld ---
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - Using 'UTF-8' encoding to copy filtered resources.
+[main] INFO org.apache.maven.shared.filtering.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /root/.jenkins/workspace/maven/src/test/resources
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ helloworld ---
+[main] INFO org.apache.maven.plugin.compiler.TestCompilerMojo - No sources to compile
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-surefire-plugin:2.12.4:test (default-test) @ helloworld ---
+[main] INFO org.apache.maven.plugin.surefire.SurefirePlugin - No tests to run.
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-jar-plugin:2.4:jar (default-jar) @ helloworld ---
+[main] INFO org.codehaus.plexus.archiver.jar.JarArchiver - Building jar: /root/.jenkins/workspace/maven/target/helloworld-1.2.jar
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - --- maven-install-plugin:2.4:install (default-install) @ helloworld ---
+[main] INFO org.codehaus.plexus.PlexusContainer - Installing /root/.jenkins/workspace/maven/target/helloworld-1.2.jar to /root/.m2/repository/com/coveros/demo/helloworld/1.2/helloworld-1.2.jar
+[main] INFO org.codehaus.plexus.PlexusContainer - Installing /root/.jenkins/workspace/maven/pom.xml to /root/.m2/repository/com/coveros/demo/helloworld/1.2/helloworld-1.2.pom
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoRecorder - 'helloworld-1.2.pom' will not be deployed due to the defined include-exclude patterns.
+[main] INFO org.jfrog.build.extractor.maven.BuildDeploymentHelper - Artifactory Build Info Recorder: Saving Build Info to '/root/.jenkins/workspace/maven/target/build-info.json'
+[main] INFO org.jfrog.build.extractor.maven.ArtifactoryManagerBuilder - Deploying artifact: http://15.207.249.107:8082/artifactory/helloworld/com/coveros/demo/helloworld/1.2/helloworld-1.2.jar
+[main] INFO org.jfrog.build.extractor.maven.BuildDeploymentHelper - Artifactory Build Info Recorder: Deploying build info ...
+[main] INFO org.jfrog.build.extractor.maven.ArtifactoryManagerBuilder - Deploying build info...
+[main] INFO org.jfrog.build.extractor.maven.ArtifactoryManagerBuilder - Build successfully deployed. Browse it in Artifactory under http://15.207.249.107:8082/artifactory/webapp/builds/maven/12
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - BUILD SUCCESS
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time:  9.742 s
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: 2021-10-27T16:13:48Z
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+Archiving artifacts
+Finished: SUCCESS

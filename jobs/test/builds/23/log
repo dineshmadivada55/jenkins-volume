@@ -1,0 +1,31 @@
+Started by user [8mha:////4DG5g+vj/tJMYUXepfpoY/5quBMTjgElTjEXvYeviKliAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9xJTczDwAcQdo88AAAAA=[0mdineshmadivada
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /root/.jenkins/workspace/test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dineshmadivada55/Java_Repo.git # timeout=10
+Fetching upstream changes from https://github.com/dineshmadivada55/Java_Repo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dineshmadivada55/Java_Repo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/master
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 6e1df7c15b1e8d74332bdb64d646aa1a6f4c4b68 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6e1df7c15b1e8d74332bdb64d646aa1a6f4c4b68 # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+[test] $ /bin/sh -xe /root/apache-tomcat-9.0.54/temp/jenkins6554557771097855404.sh
++ echo dev
+dev
++ echo false
+false
++ echo
+
++ sleep 10
++ echo
+
+Finished: SUCCESS

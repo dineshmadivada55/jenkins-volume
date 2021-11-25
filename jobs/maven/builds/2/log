@@ -1,0 +1,44 @@
+Started by user [8mha:////4DG5g+vj/tJMYUXepfpoY/5quBMTjgElTjEXvYeviKliAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9xJTczDwAcQdo88AAAAA=[0mdineshmadivada
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/maven
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /root/.jenkins/workspace/maven/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dineshmadivada55/helloworld.git # timeout=10
+Fetching upstream changes from https://github.com/dineshmadivada55/helloworld.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/dineshmadivada55/helloworld.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 0c0bd594537c68dff1f7c377fe32a5c2c1f5d50f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0c0bd594537c68dff1f7c377fe32a5c2c1f5d50f # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 0c0bd594537c68dff1f7c377fe32a5c2c1f5d50f # timeout=10
+[maven] $ mvn clean install
+FATAL: command execution failed
+java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+Caused: java.io.IOException: Cannot run program "mvn" (in directory "/root/.jenkins/workspace/maven"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:252)
+	at hudson.Proc$LocalProc.<init>(Proc.java:221)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:995)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:507)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:518)
+	at hudson.tasks.Maven.perform(Maven.java:368)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:806)
+	at hudson.model.Build$BuildExecution.build(Build.java:198)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:514)
+	at hudson.model.Run.execute(Run.java:1888)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:99)
+	at hudson.model.Executor.run(Executor.java:432)
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

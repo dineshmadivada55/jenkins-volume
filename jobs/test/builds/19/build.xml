@@ -1,0 +1,57 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>branch</name>
+          <value>dev</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>bool</name>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <com.cloudbees.plugins.credentials.CredentialsParameterValue plugin="credentials@2.6.2">
+          <name>mycredits</name>
+          <value></value>
+          <isDefaultValue>true</isDefaultValue>
+        </com.cloudbees.plugins.credentials.CredentialsParameterValue>
+        <hudson.model.PasswordParameterValue>
+          <name>mypsswd</name>
+          <value>{AQAAABAAAAAQzI1HispYxZMJMpTEvnfxnP/aAIQrO1fB+kJxMc3ibhk=}</value>
+        </hudson.model.PasswordParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>branch</string>
+        <string>bool</string>
+        <string>mycredits</string>
+        <string>mypsswd</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>19</queueId>
+  <timestamp>1635081361808</timestamp>
+  <startTime>1635081361811</startTime>
+  <result>FAILURE</result>
+  <duration>519</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/test</workspace>
+  <hudsonVersion>2.317</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

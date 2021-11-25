@@ -1,0 +1,13 @@
+Started on Oct 30, 2021 9:51:25 AM
+Started by event from 140.82.115.102 ⇒ http://65.0.6.166:8080/jenkins/github-webhook/ on Sat Oct 30 09:51:24 UTC 2021
+Using strategy: Default
+[poll] Last Built Revision: Revision 65627d71d2deada1677465b848815f960fa7b2e5 (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -h -- https://github.com/dineshmadivada55/helloworld.git # timeout=10
+Found 1 remote heads on https://github.com/dineshmadivada55/helloworld.git
+[poll] Latest remote head revision on refs/heads/master is: ec5b33a9e7cd3c58d09cabb30f37ad699f5a2c71
+Done. Took 0.31 sec
+Changes found
